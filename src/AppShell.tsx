@@ -10,6 +10,12 @@ import {
   HiDuplicate,
   HiHome,
   HiMenuAlt1,
+  HiChartBar,
+  HiAdjustments,
+  HiArrowsExpand,
+  HiNewspaper,
+  HiBan,
+  HiClock
 } from 'react-icons/hi';
 import { BsCreditCard2FrontFill, BsImages } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
@@ -20,7 +26,6 @@ const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const AlertsPage = lazy(() => import('./pages/AlertsPage'));
 const AccordionPage = lazy(() => import('./pages/AccordionPage'));
 const BadgesPage = lazy(() => import('./pages/BadgesPage'));
-const BreadcrumbPage = lazy(() => import('./pages/BreadcrumbPage'));
 const ButtonsPage = lazy(() => import('./pages/ButtonsPage'));
 const ButtonGroupPage = lazy(() => import('./pages/ButtonGroupPage'));
 const CardPage = lazy(() => import('./pages/CardPage'));
@@ -33,19 +38,19 @@ export const AppShell: FC = () => {
     [
       {
         group: false,
-        icon: HiHome,
+        icon: HiChartBar,
         title: 'Dashboard',
         href: '/',
       },
       {
         group: false,
-        icon: HiBell,
+        icon: HiClock,
         title: 'Alerts',
         href: '/alerts',
       },
       {
         group: false,
-        icon: HiCreditCard,
+        icon: HiArrowsExpand,
         title: 'Accordion',
         href: '/accordion',
       },
@@ -54,12 +59,6 @@ export const AppShell: FC = () => {
         icon: HiBadgeCheck,
         title: 'Badges',
         href: '/badges',
-      },
-      {
-        group: false,
-        icon: HiChevronDoubleRight,
-        title: 'Breadcrumb',
-        href: '/breadcrumb',
       },
       {
         group: false,
@@ -102,7 +101,7 @@ export const AppShell: FC = () => {
             className="mr-6 h-6 w-6 cursor-pointer text-gray-600 dark:text-gray-400"
             onClick={() => setCollapsed(!collapsed)}
           />
-          <span className="text-xl font-semibold dark:text-white">Substance Components</span>
+          <span className="text-xl font-semibold dark:text-white">Components</span>
         </div>
       </Navbar>
       <div className="flex h-full overflow-hidden bg-gray-50 dark:bg-gray-900">
@@ -120,7 +119,6 @@ export const AppShell: FC = () => {
               <Route path="alerts" element={<AlertsPage />} />
               <Route path="accordion" element={<AccordionPage />} />
               <Route path="badges" element={<BadgesPage />} />
-              <Route path="breadcrumb" element={<BreadcrumbPage />} />
               <Route path="buttons" element={<ButtonsPage />} />
               <Route path="button-group" element={<ButtonGroupPage />} />
               <Route path="card" element={<CardPage />} />

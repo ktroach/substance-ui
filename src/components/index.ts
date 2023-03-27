@@ -1,7 +1,6 @@
 export * from './Alert/Alert';
 export * from './Accordian/Accordion';
 export * from './Badge/Badge';
-export * from './Breadcrumb/Breadcrumb';
 export * from './Button/Button';
 export * from './ButtonGroup/ButtonGroup';
 export * from './Card/Card';
