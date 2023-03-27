@@ -1,0 +1,4 @@
+@import "../src/substance";
+
+@tailwind components;
+@tailwind utilities;
