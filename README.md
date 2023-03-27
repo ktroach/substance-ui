@@ -1,6 +1,6 @@
 # substance-react 
 
-Substance React is a component library that offers pre-built reusable components with opinionated default styles and behaviors, while at the same time offers complete freedom to override defaults. This project was borne for the need to quickly compose user interfaces in a modular and flexible way, by reducing complexities and boilerplate. This library is intended to be easy to use in your React and NextJS applications. Substance React provides the building blocks for both Developers and UX Designers, alike, to build highly-componentized and modular interfaces, based on the Design System of your choice.
+Substance React is a component library that offers pre-built reusable components with opinionated default styles and behaviors, while at the same time offers complete freedom to override defaults. This project was created to quickly compose user interfaces in a modular and flexible way, by reducing complexities and boilerplate. It is intended to be easy to use in your React and NextJS applications. Substance React provides the building blocks for both Developers and UX Designers, alike, to build highly-componentized and modular interfaces, based on the Design System of your choice.
 
 Substance React was built with React, Tailwind CSS, and TypeScript
 

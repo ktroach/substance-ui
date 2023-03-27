@@ -11,10 +11,10 @@ const CardPage: FC = () => {
       code: (
         <Card className="max-w-sm">
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            Card title
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Some quick example text to build on the card title and make up the bulk of the cards content.
           </p>
         </Card>
       ),
@@ -23,12 +23,12 @@ const CardPage: FC = () => {
     {
       title: 'Card with image',
       code: (
-        <Card className="max-w-sm" imgSrc="https://substance-react.com/docs/images/blog/image-1.jpg">
+        <Card className="max-w-sm" imgSrc="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg">
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            Card title
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Some quick example text to build on the card title and make up the bulk of the cards content.
           </p>
         </Card>
       ),
@@ -37,12 +37,12 @@ const CardPage: FC = () => {
     {
       title: 'Horizontal card',
       code: (
-        <Card className="max-w-sm" imgSrc="https://substance-react.com/docs/images/blog/image-4.jpg" horizontal>
+        <Card className="max-w-sm" imgSrc="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg" horizontal>
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            Card title
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Some quick example text to build on the card title and make up the bulk of the cards content.
           </p>
         </Card>
       ),

@@ -76,7 +76,7 @@ const DashboardPage: FC = () => {
         Substance React Components
       </h1>
       <p className="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:mb-16 lg:text-center lg:text-xl xl:px-64">
-        Reusable Components built for React applications. Built on top of Tailwind CSS.
+        Reusable Components built for React applications. Built on top of Tailwind CSS.  Substance React provides the building blocks for both Developers and UX Designers, alike, to build highly-componentized and modular interfaces, based on the Design System of your choice.
       </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {components.map(({ title, href, className, images }, index) => (
