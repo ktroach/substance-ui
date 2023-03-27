@@ -27,7 +27,7 @@ const CardPage = lazy(() => import('./pages/CardPage'));
 const SpinnersPage = lazy(() => import('./pages/SpinnersPage'));
 const TooltipsPage = lazy(() => import('./pages/TooltipsPage'));
 
-export const Root: FC = () => {
+export const AppShell: FC = () => {
   const [collapsed, setCollapsed] = useState(false);
   const itemsGroups: SidebarItem[][] = [
     [

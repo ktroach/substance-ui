@@ -1,6 +1,6 @@
 {
   "name": "substance-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "files": [
     "dist"
@@ -17,6 +17,9 @@
     "url": "https://github.com/ktroach/substance-react",
     "type": "git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },  
   "license": "MIT",
   "private": false,
   "homepage": "https://ktroach.github.io/substance-react/",
