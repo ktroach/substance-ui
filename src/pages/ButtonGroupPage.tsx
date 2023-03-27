@@ -53,16 +53,6 @@ const ButtonGroupPage: FC = () => {
             <Button color="alternative">Settings</Button>
             <Button color="alternative">Messages</Button>
           </ButtonGroup>
-          <ButtonGroup outline>
-            <Button gradientMonochrome="blue">Profile</Button>
-            <Button gradientMonochrome="blue">Settings</Button>
-            <Button gradientMonochrome="blue">Messages</Button>
-          </ButtonGroup>
-          <ButtonGroup outline>
-            <Button gradientDuoTone="cyanToBlue">Profile</Button>
-            <Button gradientDuoTone="cyanToBlue">Settings</Button>
-            <Button gradientDuoTone="cyanToBlue">Messages</Button>
-          </ButtonGroup>
         </div>
       ),
     },
@@ -78,28 +68,6 @@ const ButtonGroupPage: FC = () => {
               <HiAdjustments className="mr-3 h-4 w-4" /> Settings
             </Button>
             <Button color="alternative">
-              <HiCloudDownload className="mr-3 h-4 w-4" /> Messages
-            </Button>
-          </ButtonGroup>
-          <ButtonGroup outline>
-            <Button gradientMonochrome="blue">
-              <HiUserCircle className="mr-3 h-4 w-4" /> Profile
-            </Button>
-            <Button gradientMonochrome="blue">
-              <HiAdjustments className="mr-3 h-4 w-4" /> Settings
-            </Button>
-            <Button gradientMonochrome="blue">
-              <HiCloudDownload className="mr-3 h-4 w-4" /> Messages
-            </Button>
-          </ButtonGroup>
-          <ButtonGroup outline>
-            <Button gradientDuoTone="cyanToBlue">
-              <HiUserCircle className="mr-3 h-4 w-4" /> Profile
-            </Button>
-            <Button gradientDuoTone="cyanToBlue">
-              <HiAdjustments className="mr-3 h-4 w-4" /> Settings
-            </Button>
-            <Button gradientDuoTone="cyanToBlue">
               <HiCloudDownload className="mr-3 h-4 w-4" /> Messages
             </Button>
           </ButtonGroup>

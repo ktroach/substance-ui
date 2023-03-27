@@ -1,3 +1,4 @@
+import React from 'react';
 import { ComponentProps, FC } from 'react';
 import { HiOutlineChevronRight } from 'react-icons/hi';
 

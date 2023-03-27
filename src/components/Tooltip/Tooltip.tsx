@@ -1,3 +1,4 @@
+import React from 'react';
 import { createPopper, Instance, Placement } from '@popperjs/core';
 import { FC, ReactNode, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { ComponentProps, FC, ReactNode } from 'react';
 import classNames from 'classnames';
 import { HiX } from 'react-icons/hi';
