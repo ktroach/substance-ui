@@ -3,22 +3,15 @@ import { FC, lazy, Suspense, useState } from 'react';
 import {
   HiAnnotation,
   HiBadgeCheck,
-  HiBell,
-  HiChevronDoubleRight,
   HiCollection,
-  HiCreditCard,
   HiDuplicate,
-  HiHome,
   HiMenuAlt1,
   HiChartBar,
-  HiAdjustments,
   HiArrowsExpand,
-  HiNewspaper,
-  HiBan,
   HiClock,
   HiArrowCircleDown
 } from 'react-icons/hi';
-import { BsCreditCard2FrontFill, BsImages } from 'react-icons/bs';
+import { BsCreditCard2FrontFill } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar, Sidebar, SidebarItem, Spinner, DarkThemeToggle } from './components';
@@ -33,7 +26,6 @@ const CardPage = lazy(() => import('./pages/CardPage'));
 const SpinnersPage = lazy(() => import('./pages/SpinnersPage'));
 const TooltipsPage = lazy(() => import('./pages/TooltipsPage'));
 const DropdownPage = lazy(() => import('./pages/DropdownPage'));
-
 
 export const AppShell: FC = () => {
   const [collapsed, setCollapsed] = useState(false);

@@ -18,56 +18,56 @@ const DashboardPage: FC = () => {
       title: 'Alerts',
       href: '/alerts',
       className: 'w-56',
-      images: { light: 'alerts-light.svg', dark: 'alerts-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Accordion',
       href: '/accordion',
       className: 'w-56',
-      images: { light: 'accordion-light.svg', dark: 'accordion-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Badges',
       href: '/badges',
       className: 'w-28',
-      images: { light: 'badges-light.svg', dark: 'badges-dark.svg' },
-    },
-    {
-      title: 'Breadcrumb',
-      href: '/breadcrumb',
-      className: 'w-64',
-      images: { light: 'breadcrumb-light.svg', dark: 'breadcrumb-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Buttons',
       href: '/buttons',
       className: 'w-24',
-      images: { light: 'buttons.svg', dark: 'buttons.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Button group',
       href: '/button-group',
       className: 'w-56',
-      images: { light: 'button-group-light.svg', dark: 'button-group-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Card',
       href: '/card',
       className: 'w-36',
-      images: { light: 'card-light.svg', dark: 'card-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Spinners',
       href: '/spinners',
       className: 'w-36',
-      images: { light: 'spinners-light.svg', dark: 'spinners-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
     {
       title: 'Tooltips',
       href: '/tooltips',
       className: 'w-24',
-      images: { light: 'tooltips-light.svg', dark: 'tooltips-dark.svg' },
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
     },
+    {
+      title: 'Dropdown',
+      href: '/dropdown',
+      className: 'w-24',
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
+    },    
   ];
 
   return (
@@ -90,8 +90,8 @@ const DashboardPage: FC = () => {
               <HiExternalLink className="h-5 w-5 text-gray-900 dark:text-white" />
             </div>
             <div className="flex h-52 items-center justify-center">
-              <img className={classNames(className, 'dark:hidden')} src={getImageUrl(images.light)} alt="Alerts" />
-              <img className={classNames(className, 'hidden dark:block')} src={getImageUrl(images.dark)} alt="Alerts" />
+              <img className={classNames(className, 'dark:hidden')} src={(images.light)} alt="Image" />
+              <img className={classNames(className, 'hidden dark:block')} src={(images.dark)} alt="Image" />
             </div>
           </Link>
         ))}
