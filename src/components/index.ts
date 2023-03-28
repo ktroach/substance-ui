@@ -9,3 +9,4 @@ export * from './Sidebar/Sidebar';
 export * from './Spinner/Spinner';
 export * from './Tooltip/Tooltip';
 export * from './DarkThemeToggle/DarkThemeToggle';
+export * from './Dropdown/Dropdown';

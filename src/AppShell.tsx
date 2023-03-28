@@ -15,7 +15,8 @@ import {
   HiArrowsExpand,
   HiNewspaper,
   HiBan,
-  HiClock
+  HiClock,
+  HiArrowCircleDown
 } from 'react-icons/hi';
 import { BsCreditCard2FrontFill, BsImages } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
@@ -31,6 +32,8 @@ const ButtonGroupPage = lazy(() => import('./pages/ButtonGroupPage'));
 const CardPage = lazy(() => import('./pages/CardPage'));
 const SpinnersPage = lazy(() => import('./pages/SpinnersPage'));
 const TooltipsPage = lazy(() => import('./pages/TooltipsPage'));
+const DropdownPage = lazy(() => import('./pages/DropdownPage'));
+
 
 export const AppShell: FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -90,6 +93,12 @@ export const AppShell: FC = () => {
         title: 'Tooltips',
         href: '/tooltips',
       },
+      {
+        group: false,
+        icon: HiArrowCircleDown,
+        title: 'Dropdown',
+        href: '/dropdown',
+      },      
     ],
   ];
 
@@ -125,6 +134,7 @@ export const AppShell: FC = () => {
               <Route path="card" element={<CardPage />} />
               <Route path="spinners" element={<SpinnersPage />} />
               <Route path="tooltips" element={<TooltipsPage />} />
+              <Route path="dropdown" element={<DropdownPage />} />
             </Routes>
           </Suspense>
         </main>
