@@ -20,7 +20,7 @@ import {
 import { BsCreditCard2FrontFill, BsImages } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
 import { Route, Routes } from 'react-router-dom';
-import { Navbar, Sidebar, SidebarItem, Spinner } from './components';
+import { Navbar, Sidebar, SidebarItem, Spinner, DarkThemeToggle } from './components';
 
 const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const AlertsPage = lazy(() => import('./pages/AlertsPage'));
@@ -103,6 +103,7 @@ export const AppShell: FC = () => {
           />
           <span className="text-xl font-semibold dark:text-white">Components</span>
         </div>
+        <DarkThemeToggle />
       </Navbar>
       <div className="flex h-full overflow-hidden bg-gray-50 dark:bg-gray-900">
         <Sidebar collapsed={collapsed} itemsGroups={itemsGroups} />

@@ -8,3 +8,4 @@ export * from './Navbar/Navbar';
 export * from './Sidebar/Sidebar';
 export * from './Spinner/Spinner';
 export * from './Tooltip/Tooltip';
+export * from './DarkThemeToggle/DarkThemeToggle';

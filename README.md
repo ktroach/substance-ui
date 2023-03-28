@@ -42,6 +42,8 @@ Inspired by:
 - T3 Stack, Theo - t3.gg
 - Flowbite, https://www.youtube.com/watch?v=KaLxCiilHns&t=602s
 - Fluent UI React, Microsoft
+- Hero Icons, https://heroicons.com/
+
 
 
 
