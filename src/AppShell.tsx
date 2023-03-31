@@ -26,6 +26,7 @@ const CardPage = lazy(() => import('./pages/CardPage'));
 const SpinnersPage = lazy(() => import('./pages/SpinnersPage'));
 const TooltipsPage = lazy(() => import('./pages/TooltipsPage'));
 const DropdownPage = lazy(() => import('./pages/DropdownPage'));
+const ModalPage = lazy(() => import('./pages/ModalPage'));
 
 export const AppShell: FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -90,7 +91,13 @@ export const AppShell: FC = () => {
         icon: HiArrowCircleDown,
         title: 'Dropdown',
         href: '/dropdown',
-      },      
+      },    
+      {
+        group: false,
+        icon: HiArrowCircleDown,
+        title: 'Modal',
+        href: '/modal',
+      },            
     ],
   ];
 
@@ -127,6 +134,7 @@ export const AppShell: FC = () => {
               <Route path="spinners" element={<SpinnersPage />} />
               <Route path="tooltips" element={<TooltipsPage />} />
               <Route path="dropdown" element={<DropdownPage />} />
+              <Route path="modal" element={<ModalPage />} />
             </Routes>
           </Suspense>
         </main>

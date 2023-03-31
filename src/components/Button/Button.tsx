@@ -1,15 +1,15 @@
 import React from 'react';
-import { ComponentProps, FC } from 'react';
+import { ComponentProps, FC, ReactNode  } from 'react';
 import classNames from 'classnames';
 
 type Color = 'blue' | 'alternative' | 'dark' | 'light' | 'green' | 'red' | 'yellow' | 'purple';
 type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 type PositionInGroup = 'start' | 'middle' | 'end';
 
-export type ButtonProps = ComponentProps<'button'> & {
+export type ButtonComponentProps = Omit<ComponentProps<'button'>, 'color'> & {
   pill?: boolean;
   outline?: boolean;
-  label?: string;
+  label?: ReactNode;
   color?: Color;
   size?: Size;
   icon?: FC<ComponentProps<'svg'>>;
@@ -48,7 +48,7 @@ const iconSizeClasses: Record<Size, string> = {
   xl: '!p-3',
 };
 
-export const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonComponentProps> = ({
   children,
   className,
   pill,

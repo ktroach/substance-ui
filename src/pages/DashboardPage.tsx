@@ -67,7 +67,13 @@ const DashboardPage: FC = () => {
       href: '/dropdown',
       className: 'w-24',
       images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
-    },    
+    },
+    {
+      title: 'Modal',
+      href: '/modal',
+      className: 'w-24',
+      images: { light: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg', dark: 'https://preline.co/assets/svg/visuals/examples-overlays-modals.svg' },
+    },        
   ];
 
   return (

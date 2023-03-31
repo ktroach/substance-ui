@@ -10,3 +10,4 @@ export * from './Spinner/Spinner';
 export * from './Tooltip/Tooltip';
 export * from './DarkThemeToggle/DarkThemeToggle';
 export * from './Dropdown/Dropdown';
+export * from './Modal/Modal';
