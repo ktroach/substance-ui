@@ -1,15 +1,14 @@
+import React from 'react';
 import { ComponentProps, FC, PropsWithChildren, ReactNode, useMemo } from 'react';
 import { HiOutlineChevronDown, HiOutlineChevronLeft, HiOutlineChevronRight, HiOutlineChevronUp } from 'react-icons/hi';
 import classNames from 'classnames';
-
-import { Button, ButtonProps } from '../Button/Button';
+import { Button, ButtonComponentProps } from '../Button';
 import { Tooltip, TooltipProps } from '../Tooltip/Tooltip';
 import { DropdownItem } from './DropdownItem';
 import { DropdownDivider } from './DropdownDivider';
 import { DropdownHeader } from './DropdownHeader';
-import React from 'react';
 
-export type DropdownProps = ButtonProps &
+export type DropdownProps = ButtonComponentProps &
   Omit<TooltipProps, 'content' | 'style' | 'animation'> & {
     className?: string;
     label: ReactNode;
