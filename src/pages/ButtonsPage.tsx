@@ -2,7 +2,7 @@ import React from 'react';
 import { FC } from 'react';
 import { HiOutlineArrowRight, HiShoppingCart } from 'react-icons/hi';
 
-import { Button, Spinner } from '../components';
+import { Button, Spinner } from '../lib';
 import { CodeExample, DemoPage } from './DemoPage';
 
 const ButtonsPage: FC = () => {

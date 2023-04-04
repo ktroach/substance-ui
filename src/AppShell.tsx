@@ -14,7 +14,7 @@ import {
 import { BsCreditCard2FrontFill } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
 import { Route, Routes } from 'react-router-dom';
-import { Navbar, Sidebar, SidebarItem, Spinner, DarkThemeToggle } from './components';
+import { Navbar, Sidebar, SidebarItem, Spinner, DarkThemeToggle } from './lib';
 
 const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const AlertsPage = lazy(() => import('./pages/AlertsPage'));

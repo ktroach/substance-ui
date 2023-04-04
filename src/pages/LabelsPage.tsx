@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { CodeExample, DemoPage } from './DemoPage';
-import { Label } from '../components';
+import { Label } from '../lib';
 
 const FormsPage: FC = () => {
   const examples: CodeExample[] = [

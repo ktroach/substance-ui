@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "main": "./dist/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
   "author": {
     "name": "Kyle Roach",
@@ -31,7 +31,7 @@
     "build-components": "tsc -p tsconfig.components.json",
     "lint": "eslint",
     "release": "standard-version -a",
-    "prepublishOnly": "yarn build-components",
+    "prepublishOnly": "npm build-components",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

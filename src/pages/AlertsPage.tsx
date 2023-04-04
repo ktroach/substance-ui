@@ -2,7 +2,7 @@ import React from 'react';
 import { FC } from 'react';
 import { HiEye, HiInformationCircle } from 'react-icons/hi';
 
-import { Alert } from '../components';
+import { Alert } from '../lib';
 import { CodeExample, DemoPage } from './DemoPage';
 
 const AlertsPage: FC = () => {

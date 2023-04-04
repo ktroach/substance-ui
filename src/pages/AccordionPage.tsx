@@ -2,7 +2,7 @@ import React from 'react';
 import { FC } from 'react';
 import { HiOutlineArrowCircleDown } from 'react-icons/hi';
 
-import { Accordion, AccordionItem } from '../components';
+import { Accordion, AccordionItem } from '../lib';
 import { CodeExample, DemoPage } from './DemoPage';
 
 const AccordionPage: FC = () => {

@@ -1,8 +1,7 @@
 import React from 'react';
 import { FC, useState } from 'react';
 import { CodeExample, DemoPage } from './DemoPage';
-import { Modal, Button, } from '../components';
-// import { HiOutlineExclamationCircle } from 'react-icons/hi';
+import { Modal, Button, } from '../lib';
 
 const ModalPage: FC = () => {
     const [openModal, setOpenModal] = useState<string | undefined>();

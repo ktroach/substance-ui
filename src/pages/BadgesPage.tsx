@@ -2,7 +2,7 @@ import React from 'react';
 import { FC } from 'react';
 import { HiCheck, HiClock } from 'react-icons/hi';
 
-import { Badge } from '../components';
+import { Badge } from '../lib';
 import { CodeExample, DemoPage } from './DemoPage';
 
 const BadgesPage: FC = () => {

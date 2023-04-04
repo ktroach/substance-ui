@@ -2,7 +2,6 @@ import React from 'react';
 import { FC } from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import { getImageUrl } from '../helpers';
 import classNames from 'classnames';
 
 type ComponentItem = {
