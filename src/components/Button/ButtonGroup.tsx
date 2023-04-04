@@ -8,7 +8,7 @@ export type ButtonGroupProps = PropsWithChildren<{
 }>;
 
 const ButtonGroup: FC<ButtonGroupProps> = ({ children, pill, outline }) => {
-  const items = useMemo(
+  const buttons = useMemo(
     () =>
       Children.map(children as ReactElement<ButtonComponentProps>[], (child, index) =>
         cloneElement(child, {
@@ -27,7 +27,7 @@ const ButtonGroup: FC<ButtonGroupProps> = ({ children, pill, outline }) => {
 
   return (
     <div className="inline-flex" role="group">
-      {items}
+      {buttons}
     </div>
   );
 };

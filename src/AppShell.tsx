@@ -27,6 +27,7 @@ const SpinnersPage = lazy(() => import('./pages/SpinnersPage'));
 const TooltipsPage = lazy(() => import('./pages/TooltipsPage'));
 const DropdownPage = lazy(() => import('./pages/DropdownPage'));
 const ModalPage = lazy(() => import('./pages/ModalPage'));
+const LabelsPage = lazy(() => import('./pages/LabelsPage'));
 
 export const AppShell: FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -97,7 +98,13 @@ export const AppShell: FC = () => {
         icon: HiArrowCircleDown,
         title: 'Modal',
         href: '/modal',
-      },            
+      },  
+      {
+        group: false,
+        icon: HiArrowCircleDown,
+        title: 'Label',
+        href: '/labels',
+      },                  
     ],
   ];
 
@@ -135,6 +142,7 @@ export const AppShell: FC = () => {
               <Route path="tooltips" element={<TooltipsPage />} />
               <Route path="dropdown" element={<DropdownPage />} />
               <Route path="modal" element={<ModalPage />} />
+              <Route path="labels" element={<LabelsPage />} />
             </Routes>
           </Suspense>
         </main>
