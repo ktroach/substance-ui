@@ -1,7 +1,9 @@
 {
   "name": "substance-react",
   "version": "0.0.2",
-  "main": "./dist/index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "files": [
     "lib"
   ],
@@ -26,14 +28,21 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build --profile",
-    "test": "react-app-rewired test",
+    "test": "react-app-rewired test --color",
+    "test:coverage": "CI=true react-app-rewired test --coverage --collectCoverageFrom='[\"src/components/**/*.{ts,tsx}\",\"!src/components/**/*.stories.{ts,tsx}\"]' --color",
     "eject": "react-app-rewired eject",
-    "build-components": "tsc -p tsconfig.components.json",
-    "lint": "eslint",
+    "build-components": "npm run build-components:esm && npm run build-components:cjs",
+    "build-components:cjs": "tsc -p tsconfig.components.json",
+    "build-components:esm": "tsc -p tsconfig.components.json --module esnext --outDir lib/esm",
+    "lint": "eslint --color",
+    "lint-staged": "lint-staged --config lint-staged.js",
+    "prettier": "prettier --check {src,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,scss}",
+    "prettier:fix": "prettier --write {src,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,scss}",
     "release": "standard-version -a",
-    "prepublishOnly": "npm build-components",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "prepublishOnly": "npm run build-components",
+    "start:storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o build/storybook",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -72,6 +81,8 @@
     "@types/react-syntax-highlighter": "^13.5.2",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.3.0",
     "eslint": "^7.32.0",
@@ -90,6 +101,7 @@
     "storybook-dark-mode": "^2.1.1",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.5.5",
+    "vite": "^4.2.1",
     "webpack": "^5.76.3"
   },
   "browserslist": {

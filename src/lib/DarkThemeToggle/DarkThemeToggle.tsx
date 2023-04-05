@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 import { MoonIcon, SunIcon } from '@heroicons/react/solid';
-import React from 'react';
+//import React from 'react';
 
 export const DarkThemeToggle: FC = () => {
     useEffect(() => {
