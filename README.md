@@ -1,48 +1,45 @@
 # substance-react 
 
-Substance React is a component library that offers pre-built reusable components with opinionated default styles and behaviors, while at the same time offers complete freedom to override defaults. This project was created to quickly compose user interfaces in a modular and flexible way, by reducing complexities and boilerplate. It is intended to be easy to use in your React and NextJS applications. Substance React provides the building blocks for both Developers and UX Designers, alike, to build highly-componentized and modular interfaces, based on the Design System of your choice.
+Substance React is a new component library for NextJS and React. The purpose of this library is to offer functional components that are based on popular primitives like Radix-UI and Flowbite. This library allows you to define your own Tailwind styles and apply them to the components. It comes with a default set of styles that are influenced by Shadcn-ui, Radix, Flowbite and from a custom design system. The styles can be easily overriden and custom themes can be defined in the tailwind config to apply your own styles or translated from your design system.  The goal of this library is consolidate all of the good parts of Radix, ShadCN, and Flowbite into one consolidated set of components that can save a developer tons of time. 
 
-Substance React was built with React, Tailwind CSS, and TypeScript
+Best of all this library is completely free to use in your NextJS and React projects. It also includes a documentation demo page with React examples. 
+
+Substance React was built with React, Tailwind CSS, Radix-UI, Flowbite, Storybook, and more!
 
 # Getting Started
 
 Install substance-react as a dependency into your React or Next app:
 
-`npm i substance-react --save`
+`npm i substance-react@latest -E`
+
+Include the Subtance plugin in your Tailwind plugins and include the path to the node package in your Tailwind Config:
+
+`
+module.exports = {
+    content: [
+        './src/**/*.{js,jsx,ts,tsx}',
+        'node_modules/substance-react/**/*.{js,jsx,ts,tsx}'
+    ],
+    theme: {
+    extend: {},
+    },
+    plugins: [require('substance-react/lib/plugin')],
+};
+`
+
+# Start Using
 
 Import the Components you need into your Function Component:
 
-`import Button from 'substance-react'`
+`import {Button} from 'substance-react'`
 
-Use the Component in your JSX Markup:
+Use the Component in your markup:
 
-`<Button pill>Submit</Button>`
-
-
-## substance react components
-
-TODO 
-- Add Storybook
-- Add Tests
-- Form Example
-- TextField
-- TextArea
-- Dropdown
-- RadioGroup
-- Checkbox
-- CheckGroup
-- Toggle 
-- Table
-- Tabs
-- AssistiveText
+`<Button color="blue" size="md" pill disabled onClick=()=>({console.log("it works!")})>Submit</Button>`
 
 
-Inspired by:
-- Jack Herrington, https://www.youtube.com/watch?v=NgkYH97Z3nk&t=76s
-- T3 Stack, Theo - t3.gg
-- Flowbite, https://www.youtube.com/watch?v=KaLxCiilHns&t=602s
-- Fluent UI React, Microsoft
-- Hero Icons, https://heroicons.com/
+
+
 
 
 
