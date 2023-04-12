@@ -1,6 +1,6 @@
 {
   "name": "substance-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -20,7 +20,8 @@
     "type": "git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
   "private": false,
@@ -42,14 +43,18 @@
     "prepublishOnly": "npm run build-components",
     "start:storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o build/storybook",
-    "prepare": "husky install"
+    "prepare": ""
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@popperjs/core": "^2.11.2",
+    "@radix-ui/react-accordion": "1.1.1",
+    "@radix-ui/react-icons": "1.3.0",
     "classnames": "^2.3.1",
+    "clsx": "1.1.0",
     "mini-svg-data-uri": "^1.4.4",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "tailwind-merge": "1.12.0"
   },
   "peerDependencies": {
     "react": "^17",

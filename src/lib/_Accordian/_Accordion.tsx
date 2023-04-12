@@ -15,7 +15,7 @@ export type AccordionProps = {
   arrowIcon?: FC<ComponentProps<'svg'>>;
 };
 
-export const Accordion: FC<AccordionProps> = ({ items, flush, arrowIcon: ArrowIcon = HiChevronDown }) => {
+export const _Accordion: FC<AccordionProps> = ({ items, flush, arrowIcon: ArrowIcon = HiChevronDown }) => {
   const [openItems, setOpenItems] = useState<(boolean | undefined)[]>(items.map((item) => item.open));
 
   return (

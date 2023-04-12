@@ -18,7 +18,6 @@ import { Navbar, Sidebar, SidebarItem, Spinner, DarkThemeToggle } from './lib';
 
 const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const AlertsPage = lazy(() => import('./pages/AlertsPage'));
-const AccordionPage = lazy(() => import('./pages/AccordionPage'));
 const BadgesPage = lazy(() => import('./pages/BadgesPage'));
 const ButtonsPage = lazy(() => import('./pages/ButtonsPage'));
 const ButtonGroupPage = lazy(() => import('./pages/ButtonGroupPage'));
@@ -44,12 +43,6 @@ export const AppShell: FC = () => {
         icon: HiClock,
         title: 'Alerts',
         href: '/alerts',
-      },
-      {
-        group: false,
-        icon: HiArrowsExpand,
-        title: 'Accordion',
-        href: '/accordion',
       },
       {
         group: false,
@@ -133,7 +126,6 @@ export const AppShell: FC = () => {
             <Routes>
               <Route path="" element={<DashboardPage />} />
               <Route path="alerts" element={<AlertsPage />} />
-              <Route path="accordion" element={<AccordionPage />} />
               <Route path="badges" element={<BadgesPage />} />
               <Route path="buttons" element={<ButtonsPage />} />
               <Route path="button-group" element={<ButtonGroupPage />} />
