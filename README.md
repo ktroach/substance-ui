@@ -14,7 +14,7 @@ Install substance-react as a dependency into your React or Next app:
 
 Include the Subtance plugin in your Tailwind plugins and include the path to the node package in your Tailwind Config:
 
-`
+```
 module.exports = {
     content: [
         './src/**/*.{js,jsx,ts,tsx}',
@@ -25,17 +25,10 @@ module.exports = {
     },
     plugins: [require('substance-react/lib/plugin')],
 };
-`
+```
 
-# Start Using
+# Examples
 
-Import the Components you need into your Function Component:
-
-`import {Button} from 'substance-react'`
-
-Use the Component in your markup:
-
-`<Button color="blue" size="md" pill disabled onClick=()=>({console.log("it works!")})>Submit</Button>`
 
 
 

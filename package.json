@@ -1,6 +1,6 @@
 {
   "name": "substance-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -27,20 +27,16 @@
   "private": false,
   "homepage": "https://ktroach.github.io/substance-react/",
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build --profile",
-    "test": "react-app-rewired test --color",
-    "test:coverage": "CI=true react-app-rewired test --coverage --collectCoverageFrom='[\"src/components/**/*.{ts,tsx}\",\"!src/components/**/*.stories.{ts,tsx}\"]' --color",
-    "eject": "react-app-rewired eject",
-    "build-components": "npm run build-components:esm && npm run build-components:cjs",
-    "build-components:cjs": "tsc -p tsconfig.components.json",
-    "build-components:esm": "tsc -p tsconfig.components.json --module esnext --outDir lib/esm",
+    "build": "npm run build-library",
+    "build-library": "npm run build-library:esm && npm run build-library:cjs",
+    "build-library:cjs": "tsc -p tsconfig.library.json",
+    "build-library:esm": "tsc -p tsconfig.library.json --module esnext --outDir lib/esm",
     "lint": "eslint --color",
     "lint-staged": "lint-staged --config lint-staged.js",
     "prettier": "prettier --check {src,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,scss}",
     "prettier:fix": "prettier --write {src,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,scss}",
     "release": "standard-version -a",
-    "prepublishOnly": "npm run build-components",
+    "prepublishOnly": "npm run build",
     "start:storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o build/storybook",
     "prepare": ""
@@ -123,11 +119,13 @@
   },
   "keywords": [
     "react",
+    "nextjs",     
     "design-system",
     "tailwind",
     "tailwindcss",
-    "substance",
-    "substance-react",
-    "substance-react-components"
+    "Component Library", 
+    "UI Component Library", 
+    "NextJS Component Library", 
+    "React Component Library"
   ]
 }
