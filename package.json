@@ -37,6 +37,7 @@
     "prettier:fix": "prettier --write {src,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,scss}",
     "release": "standard-version -a",
     "prepublishOnly": "npm run build",
+    "storybook": "npm run start:storybook",
     "start:storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o build/storybook",
     "prepare": ""
