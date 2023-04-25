@@ -127,6 +127,7 @@
     "Component Library",
     "UI Component Library",
     "NextJS Component Library",
-    "React Component Library"
+    "React Component Library", 
+    "substance-ui"
   ]
 }

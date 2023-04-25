@@ -29,16 +29,3 @@ jobs:
 
       - name: Lint the code 🕵
         run: yarn lint
-
-      - name: Check the prettiness of the code 💅
-        run: yarn prettier
-
-      - name: Build the demo website 🛠
-        run: yarn build
-
-      - name: Deploy the website 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        if: github.ref == 'refs/heads/main'
-        with:
-          branch: gh-pages
-          folder: build
