@@ -1,6 +1,6 @@
 {
   "name": "substance-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -120,13 +120,13 @@
   },
   "keywords": [
     "react",
-    "nextjs",     
+    "nextjs",
     "design-system",
     "tailwind",
     "tailwindcss",
-    "Component Library", 
-    "UI Component Library", 
-    "NextJS Component Library", 
+    "Component Library",
+    "UI Component Library",
+    "NextJS Component Library",
     "React Component Library"
   ]
 }
